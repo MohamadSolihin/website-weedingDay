@@ -57,7 +57,7 @@ window.addEventListener("load", () => {
 const resetHeader = () => {
   let header = document.querySelector("header");
   header.classList.remove("active");
-}
+};
 
 // initial navigation
 const initNavigation = () => {
@@ -69,4 +69,12 @@ const initNavigation = () => {
     }
   });
   sectionNavigator("about");
-}
+};
+
+// toggle menu
+const toggleMenu = () => {
+  const menu = document.querySelector(".menu");
+  const navMobile = document.querySelector(".nav-mobile");
+  menu.classList.toggle("active");
+  navMobile.classList.toggle("active");
+};
